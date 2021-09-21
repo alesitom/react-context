@@ -18,28 +18,23 @@ const BookList = () => {
             {books.map(book => <li key={book.id}>{book.title} - {book.author}</li>)}
             </ul> */}
             <table class="table">
-  <thead class="table table-striped">
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Libro</th>
-      <th scope="col">Autor</th>
-    </tr>
-  </thead>
-  <tbody>
-  {books.map(book =>
-    <tr>
-      <th scope="row" key={book.id}>{book.id}</th>
-      <td>{book.title}</td>
-      <td>{book.author}</td>
-    </tr>
-  )}
-  </tbody>
-</table>
-
-
-
-
-
+            <thead class="table table-striped">
+                <tr>
+                <th scope="col">#</th>
+                <th scope="col">Libro</th>
+                <th scope="col">Autor</th>
+                </tr>
+            </thead>
+            <tbody>
+            {books.map(book =>
+                <tr>
+                <th scope="row" key={book.id}>{book.id}</th>
+                <td>{book.title}</td>
+                <td>{book.author}</td>
+                </tr>
+            )}
+            </tbody>
+            </table>
         </div>
     )
 }
